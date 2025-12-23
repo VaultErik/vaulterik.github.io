@@ -2,198 +2,197 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>Erik · Mentor Digital</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="VaultErik_logo_bw.png">
+<title>Erik | Presentación</title>
 
 <style>
 body {
-    margin: 0;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-    background-color: #F2F2F2;
-    color: #1f2933;
+  margin: 0;
+  padding: 60px 0;
+  font-family: sans-serif;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+}
+
+.caja-cv {
+  max-width: 700px;
+  width: 75%;
+  background: #f2f2f2;
+  padding: 40px;
+  border-radius: 24px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+img.avatar {
+  width: 250px;
+  margin-bottom: 20px;
 }
 
 section {
-    padding: 60px 20px;
-    text-align: center;
+  margin: 40px 0;
+  padding: 50px 25px;
+  border-radius: 32px;
 }
 
-.container {
-    max-width: 900px;
-    margin: auto;
-}
-
-h1 {
-    margin-top: 20px;
-    font-size: 2.4rem;
-}
-
-h2 {
-    font-size: 2rem;
-    margin-bottom: 30px;
-}
-
-h3 {
-    font-size: 1.4rem;
-    margin-bottom: 20px;
-}
-
-p {
-    line-height: 1.6;
-    max-width: 760px;
-    margin: 0 auto 16px auto;
-}
-
-/* Colores de secciones */
 .azul {
-    background-color: #4B6578;
-    color: #ffffff;
+  background-color: #4B6578;
+  color: #ffffff;
 }
 
 .amarillo {
-    background-color: #F2C94C;
-    color: #1f2933;
+  background-color: #F2C94C;
+  color: #1a1a1a;
 }
 
 .gris {
-    background-color: #F2F2F2;
-    color: #1f2933;
+  background-color: #ffffff;
+  color: #1a1a1a;
 }
 
-.verde {
-    background-color: #4A7B5E;
-    color: #ffffff;
+h1 { font-size: 32px; margin-bottom: 10px; }
+h2 { font-size: 24px; margin-top: 0; }
+h3 { font-size: 20px; }
+
+p {
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
 }
 
-/* Contacto */
-.contacto {
-    margin-top: 20px;
+.boton {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 6px;
+  background: #fff;
+  color: #000;
+  text-decoration: none;
+  border: 3px solid #000;
+  border-radius: 6px;
+  font-weight: bold;
 }
 
-.contacto a {
-    display: inline-block;
-    margin: 10px;
-    text-decoration: none;
-    font-weight: 600;
-    color: inherit;
+.boton img {
+  width: 22px;
+  vertical-align: middle;
+  margin-left: 6px;
 }
 
-/* Currículum dos columnas */
-.columns {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
-    justify-content: center;
+.curriculum-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-top: 30px;
 }
 
-.column {
-    flex: 1 1 320px;
-    max-width: 420px;
+@media (max-width: 600px) {
+  .caja-cv { width: 90%; padding: 20px; }
+  img.avatar { width: 140px; }
+  .curriculum-grid { grid-template-columns: 1fr; }
+}
+
+.boton-contacto {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 3px solid black;
+  margin: 5px;
+  background: white;
+}
+
+.boton-contacto img {
+  width: 24px;
+}
+
+footer {
+  margin-top: 40px;
+  font-size: 14px;
+  color: #555;
 }
 </style>
 </head>
 
 <body>
 
-<!-- CABECERA -->
-<section class="gris">
-    <div class="container">
-        <!-- LOGO AQUÍ -->
-        <h1>Erik</h1>
+<div class="caja-cv">
+
+  <!-- INICIO / SOBRE MÍ -->
+  <section class="azul">
+    <img class="avatar" src="./banner_logo_V·E.png" alt="Avatar Erik">
+    <h1>Erik</h1>
+    <h2>Mentor Digital</h2>
+    <p>Gracias por dedicarme unos minutos de tu tiempo.</p>
+
+    <h2>Sobre mí</h2>
+    <p>
+      Profesional con interés constante por el aprendizaje, el trabajo bien estructurado y la creación de documentación clara y útil.<br><br>
+      Mi enfoque metódico aporta atención al detalle, pensamiento analítico y soluciones prácticas.<br><br>
+      Experiencia como Mentor Digital en el proyecto de Competencias Digitales del Gobierno Vasco.<br><br>
+      Prefiero la comunicación escrita para garantizar claridad y respuestas bien pensadas.
+    </p>
+  </section>
+
+  <!-- CURRÍCULUM -->
+  <section class="amarillo">
+    <h2>Currículum</h2>
+
+    <div class="curriculum-grid">
+      <div>
         <h3>Mentor Digital</h3>
-        <p>Gracias por dedicarme unos minutos de tu tiempo.</p>
+        <a class="boton" href="https://drive.google.com/file/d/1JXkFN1EMMklOHkxpGxB-h-XXn2B4t8LE/view" target="_blank">
+          Currículum
+        </a>
+      </div>
+
+      <div>
+        <h3>Versión rolera</h3>
+        <a class="boton" href="https://drive.google.com/file/d/1AjklwJq4SuZOQDTqoQOVqcXObLRqZwt-/view" target="_blank">
+          Ficha de personaje · Nivel 35
+        </a>
+      </div>
     </div>
-</section>
+  </section>
 
-<!-- SOBRE MÍ -->
-<section class="azul">
-    <div class="container">
-        <h2>Sobre mí</h2>
+  <!-- PROYECTOS -->
+  <section class="gris">
+    <h2>Proyectos</h2>
 
-        <p>
-        Persona con interés constante por el aprendizaje, el trabajo bien estructurado
-        y la creación de documentación clara y de valor.
-        </p>
+    <h3>Websites</h3>
+    <a class="boton" href="https://vaulterik.notion.site/Erik-2584e3ab08e38031a458f5ffdce3c129" target="_blank">Presentación Notion</a>
+    <a class="boton" href="https://gaiasport.wordpress.com/" target="_blank">Gaia Sport</a>
 
-        <p>
-        Mi enfoque neurodivergente aporta atención al detalle, paciencia y capacidad
-        para detectar problemas y generar soluciones creativas.
-        </p>
+    <h3>Mentor Digital</h3>
+    <a class="boton" href="https://vaulterik.notion.site/Competencias-Digitales-A2-2bc4e3ab08e38111826ed87c4a35985c" target="_blank">Portfolio A2</a>
+    <a class="boton" href="https://erikdiazfernandez.weebly.com/" target="_blank">Portfolio A2 (Weebly)</a>
+    <a class="boton" href="https://vaulterik.notion.site/Competencias-Digitales-B1-Eduki-Digitalak-2bc4e3ab08e381c29e38cf59b9bb6e42" target="_blank">Portfolio B1</a>
 
-        <p>
-        He participado como Mentor Digital en el proyecto de Competencias Digitales
-        del Gobierno Vasco.
-        </p>
+    <h3>Proyectos propios</h3>
+    <a class="boton" href="https://drive.google.com/file/d/1I0jetyZXZEYTWH6MvcCBlYCL5oY6a5lK/view" target="_blank">Juego de mesa</a>
+    <a class="boton" href="https://drive.google.com/file/d/1UfMcAGp-xmgrODnuwnHkwo7BMlzSHS4t/view" target="_blank">Libro</a>
+  </section>
 
-        <p>
-        Tengo preferencia por la comunicación escrita.
-        </p>
-    </div>
-</section>
+  <!-- CONTACTO -->
+  <section class="azul">
+    <h2>Contacto</h2>
+    <p>Explora mis recursos y, si encajan contigo, escríbeme.</p>
 
-<!-- CURRÍCULUM -->
-<section class="amarillo">
-    <div class="container">
-        <h2>Currículum</h2>
+    <a class="boton-contacto" href="mailto:vault.erik@gmail.com"><img src="https://img.icons8.com/ios-filled/50/000000/email.png"></a>
+    <a class="boton-contacto" href="https://t.me/VaultErik"><img src="https://img.icons8.com/ios-filled/50/000000/telegram.png"></a>
+    <a class="boton-contacto" href="https://github.com/VaultErik"><img src="https://img.icons8.com/ios-filled/50/000000/github.png"></a>
+    <a class="boton-contacto" href="https://www.youtube.com/@VaultErik"><img src="https://img.icons8.com/ios-filled/50/000000/youtube-play.png"></a>
+    <a class="boton-contacto" href="https://www.instagram.com/Vault.Erik"><img src="https://img.icons8.com/ios-filled/50/000000/instagram.png"></a>
+  </section>
 
-        <div class="columns">
-            <div class="column">
-                <h3>Mentor Digital · Técnico de Soporte Educativo</h3>
-                <p>
-                Acompañamiento en procesos de aprendizaje digital,
-                soporte técnico educativo y resolución de incidencias,
-                con especial atención a la claridad, la documentación
-                y el seguimiento.
-                </p>
-            </div>
+  <footer>
+    <p>Gracias por visitar mi presentación</p>
+  </footer>
 
-            <div class="column">
-                <h3>Perfil alternativo</h3>
-                <p>
-                Si te interesa una versión más creativa y narrativa de mi perfil,
-                puedes consultar mi ficha de personaje y otros enfoques más “roleros”.
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- PROYECTOS -->
-<section class="gris">
-    <div class="container">
-        <h2>Proyectos</h2>
-
-        <p>
-        Desarrollo de recursos educativos, documentación técnica,
-        formación digital y acompañamiento en competencias tecnológicas.
-        </p>
-
-        <div class="contacto">
-            <a href="ENLACE_PROYECTO_1" target="_blank">Proyecto 1</a>
-            <a href="ENLACE_PROYECTO_2" target="_blank">Proyecto 2</a>
-            <a href="ENLACE_PROYECTO_3" target="_blank">Proyecto 3</a>
-        </div>
-    </div>
-</section>
-
-<!-- CONTACTO -->
-<section class="verde">
-    <div class="container">
-        <h2>Contacto</h2>
-
-        <p>
-        Explora mis cursos y recursos gratuitos y, si encajan contigo,
-        no dudes en escribirme.
-        </p>
-
-        <div class="contacto">
-            <a href="mailto:TU_EMAIL">Correo</a>
-            <a href="https://t.me/TU_TELEGRAM" target="_blank">Telegram</a>
-            <a href="https://www.youtube.com/TU_CANAL" target="_blank">YouTube</a>
-            <a href="https://www.instagram.com/TU_INSTAGRAM" target="_blank">Instagram</a>
-            <a href="https://github.com/TU_GITHUB" target="_blank">GitHub</a>
-        </div>
-    </div>
-</section>
+</div>
 
 </body>
 </html>
